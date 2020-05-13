@@ -5,9 +5,9 @@
       current_from_ip: "{{test_result_string.split(' ')[2]}}"
       current_port: "{{test_result_string.split(' ')[6]}}"
 
-  - name: debug state title - result
-    debug:
-      msg: "TITLE ix: {{current_protocol}}_{{current_from_ip |regex_replace('\\W','_') }}_{{current_to_ip |regex_replace('\\W','_')}}_{{current_port}}"
+#  - name: debug state title - result
+#    debug:
+#      msg: "TITLE ix: {{current_protocol}}_{{current_from_ip |regex_replace('\\W','_') }}_{{current_to_ip |regex_replace('\\W','_')}}_{{current_port}}"
 
 
   - name: setup stat result

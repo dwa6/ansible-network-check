@@ -4,11 +4,8 @@ TCP_IP = sys.argv[1]
 TCP_PORT = sys.argv[2]
 FILE  = sys.argv[3]
 
-
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
 server.bind((TCP_IP, int(TCP_PORT)))
-            
 server.listen(5)
 
 #f = open(FILE, "a")

@@ -1,6 +1,6 @@
-  - name: debug only
-    debug:
-      var: port_definition
+  #- name: debug only
+  #  debug:
+  #    var: port_definition
 
   - name: start to as server
     include: "start_to_servers.yaml"

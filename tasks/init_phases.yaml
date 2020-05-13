@@ -1,6 +1,6 @@
-  - name: debug only
-    debug:
-      var: port_definition
+  #- name: debug only
+  #  debug:
+  #    var: port_definition
 
   - name: looping to servers
     include: "loop_phase_to_server.yaml"

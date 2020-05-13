@@ -27,11 +27,11 @@
     delegate_to: "{{check_to_host}}"
 
 
-  - name: debug start server
-    delegate_to: "{{check_to_host}}"
-    debug:
-      msg: |
-        python /tmp/ansible_network_health_check_to/tcpServer.py {{test_to_ip}} {{test_port}} /tmp/ansible_network_health_check_to/{{test_protocol}}_{{test_to_ip}}_{{test_port}}_OUTPUT &
+#  - name: debug start server
+#    delegate_to: "{{check_to_host}}"
+#    debug:
+#      msg: |
+#        python /tmp/ansible_network_health_check_to/tcpServer.py {{test_to_ip}} {{test_port}} /tmp/ansible_network_health_check_to/{{test_protocol}}_{{test_to_ip}}_{{test_port}}_OUTPUT &
 
   - name: Start Server
     delegate_to: "{{check_to_host}}"
@@ -56,9 +56,9 @@
     shell: "cat /tmp/ansible_network_health_check_to/{{test_protocol}}_{{test_to_ip}}_{{test_port}}_PID"
     register: PID_tcpServer
 
-  - name: debug only
-    debug:
-      var: PID_tcpServer
+#  - name: debug only
+#    debug:
+#      var: PID_tcpServer
 
   - name: make sure file Exist
     delegate_to: "{{check_to_host}}"

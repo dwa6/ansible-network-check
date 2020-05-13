@@ -4,9 +4,9 @@
       test_protocol: "{{port_definition['type']|lower}}"
       test_port: "{{port_definition['port']}}"
 
-  - name: debug check to host only
-    debug:
-      var: check_to_host
+#  - name: debug check to host only
+#    debug:
+#      var: check_to_host
 
   - name: start tcp server
     include: tcp_to_server.yaml

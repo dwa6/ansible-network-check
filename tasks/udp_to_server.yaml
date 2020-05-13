@@ -51,9 +51,9 @@
     shell: "cat /tmp/ansible_network_health_check_to/{{test_protocol}}_{{test_to_ip}}_{{test_port}}_PID"
     register: PID_udpServer
 
-  - name: debug only
-    debug:
-      var: PID_udpServer
+#  - name: debug only
+#    debug:
+#      var: PID_udpServer
 
   - name: make sure file Exist
     delegate_to: "{{check_to_host}}"

@@ -1,7 +1,7 @@
 
-  - name: debug check_from_host
-    debug:
-      var: check_from_host
+#  - name: debug check_from_host
+#    debug:
+#      var: check_from_host
 
   - name: set variables
     set_fact:

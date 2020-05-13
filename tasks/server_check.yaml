@@ -8,9 +8,9 @@
     shell: "cat /tmp/ansible_network_health_check_to/{{test_protocol}}_{{test_to_ip}}_{{test_port}}_OUTPUT"
     register: test_reuslts
 
-  - name: Register result of tests
-    debug:
-      var: test_reuslts
+#  - name: Register result of tests
+#    debug:
+#      var: test_reuslts
 
   - name: Check server status
 #    when: check_to_host ==  inventory_hostname
